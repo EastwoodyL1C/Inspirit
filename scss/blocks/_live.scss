@@ -12,7 +12,7 @@
         background: $color-grad-main;
         z-index: -2;
     }
-    &::after {
+    &::after /*small*/ {
         content: "";
         position: absolute;
         width: 86px;
@@ -26,7 +26,7 @@
 }
 .live-screen__container {
     background: $color-white;
-    border: 1px solid $color-border;
+    border: 1px solid $color-border-main;
     border-radius: 21px;
     padding: 3rem 0rem;
     display: grid;
@@ -42,9 +42,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 12.5rem;
+    padding: 2rem 0rem;
+    width: 100%;
     &:not(:last-child) {
-        border-right: 1px solid $color-border;
+        border-right: 1px solid $color-border-main;
     }
     gap: 0.2rem;
     &__counter {

@@ -46,9 +46,15 @@ img {
     color: $color-secondary;
   }
 }
-p,h1 {
+p,h1,h2,h3 {
   margin: 0;
 }
 h1 {
   @include text ($font-secondary, 700, 6rem, 6.8rem, $color-text-primary);
+}
+h2 {
+  @include text ($font-secondary, 700, 4.6rem, 5.6rem, $color-text-primary);
+}
+h3 {
+  @include text ($font-secondary, 700, 2.4rem, 2.4rem, $color-text-primary);
 }
