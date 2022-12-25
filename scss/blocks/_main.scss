@@ -1,0 +1,89 @@
+.main-screen {
+	display: grid;
+	grid-template-areas: "info media";
+	padding: 13.4rem 0rem 9.4rem 0rem;
+	position: relative;
+	&::before {
+		position: absolute;
+		content: "";
+		display: block;
+		top: 0;
+		left: -7rem;
+		width: 80%;
+		height: 100%;
+		background: $color-grad-main;
+		opacity: 0.05;
+		border-radius: 0px 20px 20px 0px;
+		z-index: -1;
+	}
+	&__info {
+        grid-area: info;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	&__media {
+		grid-area: media;
+		max-width: 590px;
+		position: relative;
+		img {
+			max-width: 590px;
+			position: absolute;
+			top: 0rem;
+			right: -7rem;
+			cursor: pointer;
+			border-radius: 20px 0px 0px 20px;
+			box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+		}
+	}
+}
+.info {
+	max-width: 560px;
+		&__title {
+			margin-bottom: 2rem;
+		}
+
+		&__desc {
+			@include text ($font-primary, 400, 2rem, 3rem, $color-text-secondary);
+			margin-bottom: 4rem;
+		}
+
+		&__btn {
+			max-width: 210px;
+			padding: 20px 50px;
+			display: flex;
+			justify-content: center;
+			@include text ($font-primary, 700, 2rem, 2.5rem, $color-white);
+			margin-bottom: 10rem;
+		}
+}
+.info__joined {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.9rem;
+}
+.info-joined {
+		&__students {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			cursor: pointer;
+			img {
+				border-radius: 50%;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			&:not(:first-child) {
+				margin-left: -20px;
+			}
+		}
+		&__desc {
+			@include text ($font-primary, 400, 1.6rem, 2rem, $color-text-secondary);
+			span {
+				padding: 0rem 0.1rem;
+				color: $color-main;
+			}
+		}
+}

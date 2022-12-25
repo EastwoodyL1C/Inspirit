@@ -42,4 +42,13 @@ img {
   outline: 0;
   display: inline-block;
   cursor: pointer;
+  &:hover {
+    color: $color-secondary;
+  }
+}
+p,h1 {
+  margin: 0;
+}
+h1 {
+  @include text ($font-secondary, 700, 6rem, 6.8rem, $color-text-primary);
 }
