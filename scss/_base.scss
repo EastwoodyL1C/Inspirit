@@ -3,10 +3,12 @@
 *::after {
   box-sizing: border-box;
 }
-
+html {
+  font-size: 10px;
+}
 body {
-  font-family: $font;
-  color: $color-body;
+  font-family: $font-primary;
+  color: $color-text-primary;
 }
 html,
 body {
@@ -15,7 +17,7 @@ body {
   }
 }
 a {
-  color: $color-white;
+  color: $color-text-primary;
   text-decoration: none;
 }
 li {
@@ -31,4 +33,13 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+.btn {
+  background: $color-grad-main;
+  border-radius: 3.3rem;
+  color: $color-white;
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  cursor: pointer;
 }

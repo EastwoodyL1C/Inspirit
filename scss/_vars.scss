@@ -1,8 +1,15 @@
-$font: "Rubik", sans-serif;
+$font-primary: 'Mulish', sans-serif;
+$font-secondary: 'Montserrat', sans-serif;
 
-$color-primary: #ed9902;
+$color-text-primary: #001A49;
+$color-text-secondary: #4F596A;
 $color-white: #ffffff;
 $color-body: #1e1e1e;
+$color-main: #9F07FF;
+$color-secondary: #FFAE70;
+$color-grad-main: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+$color-grad-secondary: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
+
 
 $transition: 0.2s all ease-in-out;
 
