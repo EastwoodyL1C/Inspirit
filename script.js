@@ -8,6 +8,6 @@ function navToggle() {
 }
 
 function toggleItem(id) {
-  var item = document.getElementById("id");
+  var item = document.getElementById(id);
   item.classList.toggle("_active");
 }
