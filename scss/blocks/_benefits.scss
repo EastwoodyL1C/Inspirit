@@ -1,6 +1,9 @@
 .benefits {
     position: relative;
     z-index: 1;
+    @include desktop-small {
+        overflow-x: hidden;
+    }
     &::before {
         content: "";
         position: absolute;

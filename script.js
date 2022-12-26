@@ -6,3 +6,8 @@ function navToggle() {
   var body = document.getElementById("body");
   body.classList.toggle("_overflow");
 }
+
+function toggleItem(id) {
+  var item = document.getElementById("id");
+  item.classList.toggle("_active");
+}

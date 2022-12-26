@@ -1,0 +1,61 @@
+.instructor {
+    padding: 12rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__info {
+        max-width: 560px;
+    }
+    &__avatar {
+        max-width: 419px;
+        width: 354px;
+        height: 354px;
+        border-radius: 50%;
+        background: $color-grad-main;
+        position: relative;
+        @include desktop-small {
+            overflow-x: hidden;
+        }
+        &::before /*left*/ {
+            content: "";
+            position: absolute;
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            top: -1.1rem;
+            left: -2.5rem;
+            background: $color-grad-secondary;
+            z-index: -1;
+        }
+        &::after /*right*/ {
+            content: "";
+            position: absolute;
+            width: 132px;
+            height: 132px;
+            border-radius: 50%;
+            bottom: -1.7rem;
+            right: -4rem;
+            background: $color-grad-secondary;
+            opacity: 0.3;
+            z-index: -1;
+        }
+    }
+}
+.intuctor-info {
+    &__title {
+        margin-bottom: 2rem;
+    }
+    &__desc {
+        @include text ($font-primary, 400, 2rem, 3rem, $color-text-secondary);
+    }
+}
+.instructor-avatar {
+    &__img {
+        position: absolute;
+        top: 2.27rem;
+        right: 0.08rem;
+        border-radius: 50%;
+        transform: scaleX(0.98);
+    }
+}
