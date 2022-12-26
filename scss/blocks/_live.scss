@@ -11,6 +11,9 @@
         left: -20rem;
         background: $color-grad-main;
         z-index: -2;
+        @include desktop-small {
+            overflow-x: hidden;
+        }
     }
     &::after /*small*/ {
         content: "";
@@ -22,6 +25,9 @@
         left: 0rem;
         background: $color-grad-secondary;
         z-index: -1;
+        @include desktop-small {
+            overflow-x: hidden;
+        }
     }
 }
 .live-screen__container {
@@ -51,7 +57,6 @@
     &__counter {
         @include text ($font-secondary, 700, 4rem, 5rem, $color-text-primary);
     }
-
     &__desc {
         @include text ($font-primary, 400, 1.6rem, 2rem, $color-text-secondary);
     }

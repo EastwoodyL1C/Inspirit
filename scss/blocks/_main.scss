@@ -87,3 +87,23 @@
 			}
 		}
 }
+@include desktop-small {
+	.main-screen {
+		justify-content: center;
+		padding: 5.4rem 0rem 2.4rem 0rem;
+		grid-template-areas: 
+		"info" 
+		"media";
+		&::before {
+			width: 100%;
+		}
+		&__media {
+			padding: 5rem 0;
+			img {
+				position: static;
+				border-radius: 20px 20px 20px 20px;
+			}
+			
+		}
+	}
+}

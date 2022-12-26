@@ -1,0 +1,67 @@
+.adv {
+    padding-bottom: 12rem;
+    position: relative;
+    &::before /*big*/ {
+        content: "";
+        position: absolute;
+        width: 355px;
+        height: 355px;
+        border-radius: 50%;
+        top: -5.5rem;
+        right: -40%;
+        background: $color-grad-main;
+        z-index: -2;
+        @include desktop-small {
+            display: none;
+        }
+    }
+    &::after /*small*/ {
+        content: "";
+        position: absolute;
+        width: 86px;
+        height: 86px;
+        border-radius: 50%;
+        top: -5.5rem;
+        right: -16%;
+        background: $color-grad-secondary;
+        z-index: -1;
+        @include desktop-small {
+            display: none;
+        }
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.adv-block {
+    &__text {
+        @include text ($font-secondary, 700, 1.2rem, 1.5rem, $color-main);
+        position: relative;
+        letter-spacing: 2.57143px;
+        text-transform: uppercase;
+        padding: 0.8rem 3rem;
+        margin-bottom: 5rem;
+        &::before {
+            position: absolute;
+            content: "";
+            opacity: 0.2;
+            width: 100%;
+            height: 100%;
+            top: 0rem;
+            left: 0rem;
+            background: $color-grad-secondary;
+            border-radius: 33px;
+        }
+    }
+    &__title {
+        max-width: 650px;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    &__btn {
+        padding: 2rem 4.9rem;
+        @include text ($font-primary, 700, 2rem, 2.5rem, $color-white);
+    }
+}
