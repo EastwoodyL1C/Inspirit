@@ -62,3 +62,9 @@ h2 {
 h3 {
   @include text ($font-secondary, 700, 2.4rem, 2.4rem, $color-text-primary);
 }
+
+@include tablet-small {
+  html {
+    font-size: 8px;
+  }
+}

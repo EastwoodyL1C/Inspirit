@@ -89,7 +89,7 @@
 }
 @include desktop-small {
 	.main-screen {
-		justify-content: center;
+		justify-items: center;
 		padding: 5.4rem 0rem 2.4rem 0rem;
 		grid-template-areas: 
 		"info" 
@@ -105,5 +105,14 @@
 			}
 			
 		}
+	}
+	.info {
+		max-width: 90%;
+	}
+}
+@include tablet-small {
+	.main-screen__media img {
+		width: 95%;
+		text-align: center;
 	}
 }

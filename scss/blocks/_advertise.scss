@@ -65,3 +65,8 @@
         @include text ($font-primary, 700, 2rem, 2.5rem, $color-white);
     }
 }
+@include tablet-small {
+    .adv {
+        padding-bottom: 4rem;
+    }
+}

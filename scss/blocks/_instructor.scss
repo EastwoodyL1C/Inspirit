@@ -14,9 +14,6 @@
         border-radius: 50%;
         background: $color-grad-main;
         position: relative;
-        @include desktop-small {
-            overflow-x: hidden;
-        }
         &::before /*left*/ {
             content: "";
             position: absolute;
@@ -27,6 +24,7 @@
             left: -2.5rem;
             background: $color-grad-secondary;
             z-index: -1;
+            
         }
         &::after /*right*/ {
             content: "";
@@ -57,5 +55,22 @@
         right: 0.08rem;
         border-radius: 50%;
         transform: scaleX(0.98);
+    }
+}
+@include desktop-small {
+    .instructor {
+        padding: 7rem 0;
+        display: flex;
+        flex-direction: column-reverse;
+        &__avatar {
+            margin-bottom: 5rem;
+        }
+    }
+}
+@include tablet-small {
+    .instructor-avatar {
+        &__img {
+            top: 2.76rem;
+        }
     }
 }

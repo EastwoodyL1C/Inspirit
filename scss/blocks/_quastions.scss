@@ -76,3 +76,8 @@
         @include text ($font-primary, 400, 1.6rem, 2.6rem, $color-text-secondary);
 	}
 }
+@include tablet-small {
+    .quastions {
+        padding: 4.7rem 2rem 3rem 2rem;
+    }
+}

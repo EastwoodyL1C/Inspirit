@@ -115,3 +115,15 @@
         padding: 7px 0;
     }
 }
+@include tablet-small {
+    .benefits {
+        &__block {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .benefits-content {
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+}
