@@ -28,6 +28,9 @@
         max-width: 560px;
         text-align: center;
     }
+    &__breakpoint {
+        display: none;
+    }
 }
 .owl-carousel {
     display: flex;
@@ -85,5 +88,11 @@
         &__desc {
             margin-bottom: 3rem;
         }
+        &__breakpoint {
+            display: block;
+        }
+    }
+    .owl-carousel {
+        display: none;
     }
 }
