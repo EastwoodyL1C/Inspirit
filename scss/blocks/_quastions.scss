@@ -18,7 +18,7 @@
     margin-bottom: 2rem;
     cursor: pointer;
     border-radius: 21px;
-    border: 1px solid $color-bg;
+    border: 1px solid transparent;
     &._active {
         .script__body {
             display: block;

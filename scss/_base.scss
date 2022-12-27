@@ -42,7 +42,7 @@ img {
   border: 0;
   outline: 0;
   display: inline-block;
-  border: 1px solid $color-bg;
+  border: 1px solid transparent;
   cursor: pointer;
   &:hover {
     color: $color-secondary;
