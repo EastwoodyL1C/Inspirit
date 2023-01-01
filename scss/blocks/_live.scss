@@ -61,3 +61,15 @@
         @include text ($font-primary, 400, 1.6rem, 2rem, $color-text-secondary);
     }
 }
+@include mobile {
+    .live-screen__container {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .block {
+        &:not(:last-child) {
+            border-bottom: 1px solid $color-border-main;
+        }
+    }
+}

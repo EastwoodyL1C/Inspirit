@@ -20,9 +20,15 @@ body {
 a {
   color: $color-text-primary;
   text-decoration: none;
+  transition: $transition;
 }
 li {
   list-style: none;
+}
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0;
 }
 .container {
   max-width: 1160px;
@@ -45,7 +51,7 @@ img {
   border: 1px solid transparent;
   cursor: pointer;
   &:hover {
-    color: $color-secondary;
+    color: $color-white;
     filter:brightness(90%);
     border: 1px solid $color-main;
   }
@@ -66,5 +72,16 @@ h3 {
 @include tablet-small {
   html {
     font-size: 8px;
+  }
+}
+@include mobile {
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 1.6rem;
   }
 }

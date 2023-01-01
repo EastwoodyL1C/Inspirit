@@ -9,11 +9,12 @@
         content: "";
         z-index: -1;
         position: absolute;
-        left: -2rem;
-        width: calc(100% + 4rem);
+        left: -40rem;
+        width: calc(100% + 80rem);
         display: block;
         height: 100%;
         background: $color-grad-main;
+        overflow-x: hidden;
     }
     &__title {
         color: $color-white;
@@ -78,6 +79,12 @@
     }
 }
 @include desktop-small {
+    .slider {
+        &::before {
+            left: -2rem;
+            width: calc(100% + 4rem);
+        }
+    }
     .owl-carousel {
         padding: 2rem;
     }
@@ -91,17 +98,5 @@
         &__desc {
             margin-bottom: 3rem;
         }
-        &__breakpoint {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-    .owl-carousel.owl-loaded {
-        display: none;
-    }
-    .item {
-        margin-bottom: 2rem;
-        width: 90%;
     }
 }

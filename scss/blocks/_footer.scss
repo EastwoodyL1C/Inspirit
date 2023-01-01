@@ -6,16 +6,13 @@
 		content: "";
 		display: block;
 		top: 0;
-		left: -2rem;
-		width: calc(100% + 4rem);
+		left: -40rem;
+		width: calc(100% + 80rem);
 		height: 100%;
 		background: $color-grad-main;
 		opacity: 0.05;
 		z-index: -1;
-        @include desktop-small {
-            width: calc(100% + 4rem);
-            
-        }
+        overflow-x: hidden;
 	}
     &__submit {
         display: flex;
@@ -111,6 +108,14 @@
         @include text ($font-primary, 400, 1.6rem, 2rem, $color-text-secondary);
     }
 }
+@include desktop-small {
+    .footer {
+        &::before {
+            left: -2rem;
+            width: calc(100% + 4rem);
+        }
+    }
+}
 @include tablet {
     .footer {
         &__submit {
@@ -158,6 +163,14 @@
         &__btn {
             position: static;
             max-width: 140px;
+        }
+    }
+}
+@include mobile {
+    .footer-menu {
+        &__ul {
+            flex-direction: column;
+            gap: 0;
         }
     }
 }

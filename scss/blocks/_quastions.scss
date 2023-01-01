@@ -37,7 +37,6 @@
         left: 0rem;
         border: 1px solid $color-border-secondary;
         border-radius: 21px;
-        
     }
 	&__header {
         display: flex;
@@ -50,6 +49,7 @@
     }
 	&__arrow {
         padding: 1rem 1rem;
+        min-width: 48px;
         width: 48px;
         height: 48px;
         position: relative;
@@ -68,6 +68,7 @@
             height: 100%;
             top: 0rem;
             left: 0rem;
+            flex-shrink: 1;
         }
 	}
 	&__body {

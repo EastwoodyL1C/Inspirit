@@ -43,15 +43,6 @@
         gap: 5rem;
         align-items: center;
     }
-    &__a {
-        transition: $transition;
-        &:hover {
-            color: $color-main;
-        }
-        &.btn:hover {
-            color: $color-secondary;
-        }
-    }
     &__btn {
         padding: 15px 30px;
     }

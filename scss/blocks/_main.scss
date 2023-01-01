@@ -8,13 +8,14 @@
 		content: "";
 		display: block;
 		top: 0;
-		left: -7rem;
-		width: 80%;
+		left: -40rem;
+		width: 115%;
 		height: 100%;
 		background: $color-grad-main;
 		opacity: 0.05;
 		border-radius: 0px 20px 20px 0px;
 		z-index: -1;
+		overflow-x: hidden;
 	}
 	&__info {
         grid-area: info;
@@ -120,6 +121,7 @@
 		"media";
 		&::before {
 			width: 100%;
+			left: -2rem;
 		}
 		&__media {
 			padding: 5rem 0;
