@@ -14,7 +14,6 @@
         border-radius: 50%;
         background: $color-grad-main;
         position: relative;
-        overflow-x: hidden;
         &::before /*left*/ {
             content: "";
             position: absolute;
